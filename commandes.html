@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Commandes Git</title>
+</head>
+<body>
+    <h1>Liste des Commandes Git</h1>
+    <dl>
+        <dt>git init</dt>
+        <dd>Initialise un nouveau dépôt Git. Cela crée un nouveau sous-répertoire nommé .git qui contient tous les fichiers nécessaires au dépôt. Le répertoire de travail est considéré comme le "working directory".</dd>
+
+        <dt>git clone [url]</dt>
+        <dd>Clone un dépôt existant à partir de l'URL fournie. Cela crée une copie locale du dépôt distant, incluant toutes les branches et tags.</dd>
+
+        <dt>git add [fichier]</dt>
+        <dd>Ajoute un fichier à la zone de staging (index). Git ne suivra les modifications de ce fichier que si vous l'ajoutez à l'index.</dd>
+
+        <dt>git commit -m "message"</dt>
+        <dd>Enregistre les fichiers actuellement dans la zone de staging dans le dépôt, avec un message de commit expliquant la nature des modifications.</dd>
+
+        <dt>git status</dt>
+        <dd>Affiche l'état des fichiers dans le répertoire de travail et la zone de staging. Il montre quels fichiers ont été modifiés ou sont prêts à être commités.</dd>
+
+        <dt>git push [alias] [branche]</dt>
+        <dd>Pousse les commits de votre branche locale vers la branche distante. Alias est généralement origin, qui est le nom par défaut pour le dépôt distant que vous avez cloné.</dd>
+
+        <dt>git pull</dt>
+        <dd>Mise à jour de votre branche actuelle avec les derniers changements de la branche distante. Cela équivaut à faire un git fetch suivi d'un git merge.</dd>
+
+        <dt>git branch</dt>
+        <dd>Liste toutes les branches locales dans votre dépôt. Avec des options supplémentaires, vous pouvez également voir les branches distantes.</dd>
+
+        <dt>git checkout [nom_de_branche]</dt>
+        <dd>Permet de changer de branche ou de restaurer les fichiers de l'arborescence de travail.</dd>
+
+        <dt>git merge [branche]</dt>
+        <dd>Fusionne la branche spécifiée dans votre branche actuelle. Git essaiera de fusionner automatiquement les changements.</dd>
+
+        <dt>git stash</dt>
+        <dd>Mettez de côté les modifications non commitées de votre branche actuelle, vous permettant de passer à une autre branche sans commit.</dd>
+    </dl>
+</body>
+</html>
